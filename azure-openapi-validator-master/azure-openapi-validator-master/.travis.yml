@@ -1,0 +1,12 @@
+language: node
+dist: trusty
+language: node_js
+node_js:
+  - "7.10.0"
+install:
+  # dotnet 2.0 prereq
+  - sudo apt-get install libunwind8
+  # node packages
+  - npm install
+script:
+  - gulp
